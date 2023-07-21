@@ -20,6 +20,10 @@ a{
     color: black;
 }
 
+.menu li:first-child{
+    font-weight: bold;
+}
+
 body{
     background-color: #F5EFE7;
 }
@@ -40,16 +44,19 @@ body{
     background-color: #D8C4B6;
 }
 
-.intro *{
-    display: inline;
-}
-
 .intro{
-    text-align: center;
+    empty-cells: hide; /* 사용하지 않는 빈 셀의 테두리를 표시하지 않음*/
     padding: 20px;
     font-style: italic;
-    font-size: 18px;
-    color: white ;
+    font-size: 20px;
+    color: white;
+    margin: auto;
+}
+
+th, td{
+    width: 120px;
+    text-align: center;
+    padding: 10px;
 }
 
 #contact{
@@ -69,4 +76,9 @@ body{
     text-align: center;
     font-size: 30px;
     font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.contactcss img{
+    width: 600px;
+    padding-bottom: 20px;
 }
